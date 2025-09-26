@@ -27,7 +27,7 @@ const ThemeContext = createContext<{ theme: string; toggle: () => void }>({
   toggle: () => {},
 });
 
-// Mini knowledge base
+
 const knowledge: Record<string, string> = {
   computer: "A computer is an electronic device for storing and processing data.",
   javascript:
@@ -42,9 +42,47 @@ const knowledge: Record<string, string> = {
   internet: "The Internet is a global network connecting millions of computers.",
   api: "An API (Application Programming Interface) allows applications to communicate with each other.",
   database: "A database is an organized collection of structured information or data.",
+  paracetamol: "Paracetamol (acetaminophen) reduces fever and relieves mild pain by blocking pain signals in the brain.",
+  aspirin: "Aspirin reduces pain, fever, and inflammation, and it can also thin the blood to prevent clots.",
+  ibuprofen: "Ibuprofen is an anti-inflammatory drug that reduces pain, swelling, and fever.",
+  antibiotics: "Antibiotics are medicines that kill or stop the growth of bacteria, helping fight bacterial infections.",
+  vaccine: "Vaccines train the immune system to recognize and fight specific viruses or bacteria without causing the disease.",
+  insulin: "Insulin is a hormone used to regulate blood sugar levels, especially in patients with diabetes.",
+  antihistamine: "Antihistamines reduce allergy symptoms by blocking histamine, a chemical released during allergic reactions.",
+  morphine: "Morphine is a strong painkiller that acts on the nervous system to block severe pain signals.",
+  coughsyrup: "Cough syrups often contain soothing agents or suppressants to reduce coughing and ease throat irritation.",
+  antibioticResistance: "Antibiotic resistance happens when bacteria adapt and become harder to kill with antibiotics.",
+  ww2: "World War II (1939–1945) was a global conflict involving most of the world’s nations.",
+   cad: "Engineers use CAD (Computer-Aided Design) software to design machines, structures, and products.",
+  matlab: "MATLAB is used by engineers for simulations, modeling, and mathematical analysis.",
+  autocad: "AutoCAD is widely used by civil and mechanical engineers for drawing and design.",
+  bridge: "Civil engineers design bridges by calculating load, stress, and material strength.",
+  circuit: "Electrical engineers design circuits to control electricity flow.",
+  array: "In programming, an array is a collection of items stored at contiguous memory locations.",
+  algorithm:
+    "An algorithm is a step-by-step procedure for solving a problem or performing a task.",
+  function:
+    "A function is a reusable block of code that performs a specific task.",
+  variable:
+    "A variable is a named storage location in programming that holds a value.",
+ curriculum: "Teachers follow a curriculum, which is a structured plan of subjects and lessons.",
+  pedagogy: "Pedagogy refers to the methods and practice of teaching.",
+  onlinelearning: "Teachers use online learning tools like Google Classroom or Zoom for remote teaching.",
+   contract: "Lawyers draft and review contracts to make sure agreements are legally binding.",
+  lawsuit: "A lawsuit is a legal case brought before a court of law.",
+  evidence: "Lawyers use evidence to support their client’s case in court.",
+  constitution: "Constitutional lawyers work with laws that define a country’s legal system.",
+  negotiation: "Lawyers often negotiate deals and settlements outside of court.",
+
+  
+  fertilizer: "Farmers use fertilizers to provide nutrients and improve crop growth.",
+  irrigation: "Irrigation systems help farmers water their fields efficiently.",
+  tractor: "Farmers use tractors to plow, plant, and harvest crops.",
+  organicfarming: "Organic farming avoids synthetic chemicals and focuses on natural growth methods.",
+
 };
 
-// Enhanced AI engine
+
 function AIEngine(userText: string): string {
   const lower = userText.toLowerCase().trim();
   const randomReplies = [
@@ -81,7 +119,7 @@ function AIEngine(userText: string): string {
     "Very insightful!",
   ];
 
-  // Knowledge check
+
   for (const key in knowledge) {
     if (lower.includes(key)) return knowledge[key];
   }
