@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# 🤖 ChatBuddy - AI-like React Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ChatBuddy is a simple AI-like chatbot built with **React + TypeScript**.  
+It uses **React Hooks** and a **mini knowledge base** to reply dynamically without requiring any external API or authentication tokens.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
+- 💬 Simulated AI replies with 30+ random dynamic responses
+- 📚 Knowledge-based answers (e.g., "define computer", "what is React")
+- 🎨 Light/Dark theme toggle
+- ✨ Smooth chat bubble animations
+- 🧹 Clear chat history button
+- ⌨️ Send messages via **Enter** key or **Send** button
+- ⚡ Powered entirely by React Hooks (no external backend)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠️ Tech Stack
+- **React** (Frontend UI)
+- **TypeScript** (type safety)
+- **React Hooks**: 
+  - `useState` → manage input, theme, counters  
+  - `useReducer` → handle chat messages  
+  - `useRef` → scroll to bottom of chat  
+  - `useCallback` → optimize functions  
+  - `useMemo` → memoize theme context values  
+  - `useLayoutEffect` → auto-scroll on new messages  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 📦 Packages Used
+- **React**  
+- **TypeScript**  
+- No extra dependencies! 🎉 (everything is built-in React)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📚 What I Learned
+- How to use **React Hooks** effectively for state and UI management  
+- Using `useReducer` for managing chat messages more cleanly than `useState`  
+- Implementing **Context API** for theme switching  
+- Creating a **mini AI engine** with keyword detection + knowledge base  
+- Adding **animations** with CSS keyframes for better UX  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 Challenges Faced
+- Handling **message IDs** properly to avoid duplicate keys  
+- Designing a **knowledge base system** for static answers  
+- Ensuring the chat auto-scrolls when new messages arrive  
+- Making the UI look friendly and animated with minimal CSS  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔮 Future Improvements
+- Add **typing indicator** (e.g., "ChatBuddy is typing...")  
+- Save chat history in **localStorage** so it persists on reload  
+- Expand the **knowledge base** with more categories (science, history, etc.)  
+- Integrate with a **real AI API** (like OpenAI or Hugging Face)  
+- Add **voice input/output** for accessibility  
+- Create a **mobile-friendly responsive UI**  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ▶️ How to Run
+```bash
+# Clone the repository
+cd chatbuddy
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Install dependencies
+npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run the app
+npm start
